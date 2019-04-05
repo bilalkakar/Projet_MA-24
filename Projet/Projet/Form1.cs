@@ -65,5 +65,10 @@ namespace Projet
             txtCote1.Text = "";
             txtCote2.Text = "";
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

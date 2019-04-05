@@ -39,8 +39,10 @@ namespace Projet
             {
                 double hypothenise = Hypothenise(adjacent, oppose);    // calcul de l'hypothenus du triangle
                 double perimetre = hypothenise + adjacent + oppose;    // calcule de la perimetre du triangle
+                double air = 0.5 * adjacent * oppose;
                 lblResultHypo.Text = hypothenise.ToString();
                 lblResultPerim.Text = perimetre.ToString();
+                lblResultAir.Text = air.ToString();
             }             
         }
 
@@ -61,7 +63,8 @@ namespace Projet
             // Quand j'appuis sur le bouton "Reset", il va effacer les resultats et va vider les champs saisis
 
             lblResultHypo.Text = "";                
-            lblResultPerim.Text = "";               
+            lblResultPerim.Text = "";
+            lblResultAir.Text = "";
             txtCote1.Text = "";
             txtCote2.Text = "";
         }

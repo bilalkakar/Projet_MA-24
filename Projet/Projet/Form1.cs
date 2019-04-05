@@ -58,8 +58,10 @@ namespace Projet
 
         private void cmdButton_Click(object sender, EventArgs e)
         {
-            lblResultHypo.Text = "";
-            lblResultPerim.Text = "";
+            // Quand j'appuis sur le bouton "Reset", il va effacer les resultats et va vider les champs saisis
+
+            lblResultHypo.Text = "";                
+            lblResultPerim.Text = "";               
             txtCote1.Text = "";
             txtCote2.Text = "";
         }

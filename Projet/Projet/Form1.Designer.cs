@@ -38,6 +38,7 @@
             this.lblResultHypo = new System.Windows.Forms.Label();
             this.lblPerimetre = new System.Windows.Forms.Label();
             this.lblResultPerim = new System.Windows.Forms.Label();
+            this.cmdButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtCote1
@@ -45,15 +46,15 @@
             this.txtCote1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCote1.Location = new System.Drawing.Point(123, 128);
             this.txtCote1.Name = "txtCote1";
-            this.txtCote1.Size = new System.Drawing.Size(138, 29);
+            this.txtCote1.Size = new System.Drawing.Size(159, 29);
             this.txtCote1.TabIndex = 0;
             // 
             // txtCote2
             // 
             this.txtCote2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCote2.Location = new System.Drawing.Point(375, 128);
+            this.txtCote2.Location = new System.Drawing.Point(366, 128);
             this.txtCote2.Name = "txtCote2";
-            this.txtCote2.Size = new System.Drawing.Size(150, 29);
+            this.txtCote2.Size = new System.Drawing.Size(159, 29);
             this.txtCote2.TabIndex = 1;
             // 
             // lblCote
@@ -90,9 +91,9 @@
             // cmdCalcul
             // 
             this.cmdCalcul.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCalcul.Location = new System.Drawing.Point(218, 226);
+            this.cmdCalcul.Location = new System.Drawing.Point(123, 210);
             this.cmdCalcul.Name = "cmdCalcul";
-            this.cmdCalcul.Size = new System.Drawing.Size(196, 50);
+            this.cmdCalcul.Size = new System.Drawing.Size(159, 50);
             this.cmdCalcul.TabIndex = 5;
             this.cmdCalcul.Text = "Calculer";
             this.cmdCalcul.UseVisualStyleBackColor = true;
@@ -139,11 +140,23 @@
             this.lblResultPerim.Size = new System.Drawing.Size(0, 24);
             this.lblResultPerim.TabIndex = 9;
             // 
+            // cmdButton
+            // 
+            this.cmdButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdButton.Location = new System.Drawing.Point(366, 210);
+            this.cmdButton.Name = "cmdButton";
+            this.cmdButton.Size = new System.Drawing.Size(159, 50);
+            this.cmdButton.TabIndex = 10;
+            this.cmdButton.Text = "Reset";
+            this.cmdButton.UseVisualStyleBackColor = true;
+            this.cmdButton.Click += new System.EventHandler(this.cmdButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 450);
+            this.Controls.Add(this.cmdButton);
             this.Controls.Add(this.lblResultPerim);
             this.Controls.Add(this.lblPerimetre);
             this.Controls.Add(this.lblResultHypo);
@@ -173,6 +186,7 @@
         private System.Windows.Forms.Label lblResultHypo;
         private System.Windows.Forms.Label lblPerimetre;
         private System.Windows.Forms.Label lblResultPerim;
+        private System.Windows.Forms.Button cmdButton;
     }
 }
 

@@ -35,16 +35,13 @@ namespace Projet
                 lblResultHypo.Text = "";
                 MessageBox.Show("Veriviez que les champs sont non-vide et les chiffres sont superieur a zero");
             }
-            
             else
             {
                 double hypothenise = Hypothenise(adjacent, oppose);    // calcul de l'hypothenus du triangle
                 double perimetre = hypothenise + adjacent + oppose;    // calcule de la perimetre du triangle
                 lblResultHypo.Text = hypothenise.ToString();
                 lblResultPerim.Text = perimetre.ToString();
-            }
-
-                       
+            }             
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -57,6 +54,14 @@ namespace Projet
             double SommeDesCarres = (x * x) + (y * y);
             double resultat = Math.Sqrt(SommeDesCarres);
             return resultat;
+        }
+
+        private void cmdButton_Click(object sender, EventArgs e)
+        {
+            lblResultHypo.Text = "";
+            lblResultPerim.Text = "";
+            txtCote1.Text = "";
+            txtCote2.Text = "";
         }
     }
 }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCote1 = new System.Windows.Forms.TextBox();
-            this.txtCote2 = new System.Windows.Forms.TextBox();
-            this.lblCote = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtAdjacent = new System.Windows.Forms.TextBox();
+            this.txtOppose = new System.Windows.Forms.TextBox();
+            this.lblAdjacent = new System.Windows.Forms.Label();
+            this.lblOppose = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmdCalcul = new System.Windows.Forms.Button();
             this.lblhypothenise = new System.Windows.Forms.Label();
@@ -43,42 +43,42 @@
             this.lblResultAir = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtCote1
+            // txtAdjacent
             // 
-            this.txtCote1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCote1.Location = new System.Drawing.Point(123, 128);
-            this.txtCote1.Name = "txtCote1";
-            this.txtCote1.Size = new System.Drawing.Size(159, 29);
-            this.txtCote1.TabIndex = 0;
+            this.txtAdjacent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdjacent.Location = new System.Drawing.Point(123, 128);
+            this.txtAdjacent.Name = "txtAdjacent";
+            this.txtAdjacent.Size = new System.Drawing.Size(159, 29);
+            this.txtAdjacent.TabIndex = 0;
             // 
-            // txtCote2
+            // txtOppose
             // 
-            this.txtCote2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCote2.Location = new System.Drawing.Point(366, 128);
-            this.txtCote2.Name = "txtCote2";
-            this.txtCote2.Size = new System.Drawing.Size(159, 29);
-            this.txtCote2.TabIndex = 1;
+            this.txtOppose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOppose.Location = new System.Drawing.Point(366, 128);
+            this.txtOppose.Name = "txtOppose";
+            this.txtOppose.Size = new System.Drawing.Size(159, 29);
+            this.txtOppose.TabIndex = 1;
             // 
-            // lblCote
+            // lblAdjacent
             // 
-            this.lblCote.AutoSize = true;
-            this.lblCote.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCote.Location = new System.Drawing.Point(156, 101);
-            this.lblCote.Name = "lblCote";
-            this.lblCote.Size = new System.Drawing.Size(64, 24);
-            this.lblCote.TabIndex = 2;
-            this.lblCote.Text = "Côté 1";
+            this.lblAdjacent.AutoSize = true;
+            this.lblAdjacent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdjacent.Location = new System.Drawing.Point(119, 101);
+            this.lblAdjacent.Name = "lblAdjacent";
+            this.lblAdjacent.Size = new System.Drawing.Size(84, 24);
+            this.lblAdjacent.TabIndex = 2;
+            this.lblAdjacent.Text = "Adjacent";
             // 
-            // label1
+            // lblOppose
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(426, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 24);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Côté 2";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblOppose.AutoSize = true;
+            this.lblOppose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOppose.Location = new System.Drawing.Point(362, 101);
+            this.lblOppose.Name = "lblOppose";
+            this.lblOppose.Size = new System.Drawing.Size(78, 24);
+            this.lblOppose.TabIndex = 3;
+            this.lblOppose.Text = "Opposé";
+            this.lblOppose.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -188,10 +188,10 @@
             this.Controls.Add(this.lblhypothenise);
             this.Controls.Add(this.cmdCalcul);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblCote);
-            this.Controls.Add(this.txtCote2);
-            this.Controls.Add(this.txtCote1);
+            this.Controls.Add(this.lblOppose);
+            this.Controls.Add(this.lblAdjacent);
+            this.Controls.Add(this.txtOppose);
+            this.Controls.Add(this.txtAdjacent);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -201,10 +201,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtCote1;
-        private System.Windows.Forms.TextBox txtCote2;
-        private System.Windows.Forms.Label lblCote;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtAdjacent;
+        private System.Windows.Forms.TextBox txtOppose;
+        private System.Windows.Forms.Label lblAdjacent;
+        private System.Windows.Forms.Label lblOppose;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cmdCalcul;
         private System.Windows.Forms.Label lblhypothenise;

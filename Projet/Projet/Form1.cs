@@ -26,10 +26,10 @@ namespace Projet
         {
             double adjacent = 0, oppose = 0;
 
-            Double.TryParse(txtCote1.Text, out adjacent);   //conversion du texte en double
-            Double.TryParse(txtCote2.Text, out oppose);     //conversion du texte en double
+            Double.TryParse(txtAdjacent.Text, out adjacent);   //conversion du texte en double
+            Double.TryParse(txtOppose.Text, out oppose);     //conversion du texte en double
 
-            if (txtCote1.Text=="" || txtCote2.Text=="" || adjacent <= 0 || oppose <= 0) // si les champs sont vides ou les valeurs sont plus petites que zero
+            if (txtAdjacent.Text=="" || txtOppose.Text=="" || adjacent <= 0 || oppose <= 0) // si les champs sont vides ou les valeurs sont plus petites que zero
             {
                 lblResultPerim.Text = "";
                 lblResultHypo.Text = "";
@@ -65,8 +65,8 @@ namespace Projet
             lblResultHypo.Text = "";                
             lblResultPerim.Text = "";
             lblResultAir.Text = "";
-            txtCote1.Text = "";
-            txtCote2.Text = "";
+            txtAdjacent.Text = "";
+            txtOppose.Text = "";
         }
 
         private void label2_Click(object sender, EventArgs e)

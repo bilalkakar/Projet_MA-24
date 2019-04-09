@@ -21,6 +21,6 @@ A fin d'avoir un bon fonctionnement du programme, plusieurs tests sont effectué
   <li>Tester quand utilisateur entre un chiffre inférieur à zero dans un des champs (adjacent, opposé) que le programme s'affiche un             message d'erreur.</li>
   <li>Tester quand utilisateur entre d'autre caractères que nombre dans les champs (adjacent, opposé) que le programme s'affiche un             message d'erreur.</li>
   <li>Tester le fonctionnement du botton "Reset" qu'il vide bien les champs à saisir et qu'il efface le resultat.</li>
-  <li>Tester quand l'utilisateur appuit sur le bouton "Calculer" sans avoir rempli les champs (adjacent, opposé) que le programme affiche       un message erreur de bien remplir les champs avec les valeur valides.</li>
+  <li>Tester quand l'utilisateur appuit sur le bouton "Calculer" sans avoir rempli les champs (adjacent, opposé) que le programme               s'affiche un message erreur de bien remplir les champs avec les valeur valides.</li>
   <li>Le test des calculs (calcul de l'hypothénus, du périmètre et de l'aire).</li>
 </ul>

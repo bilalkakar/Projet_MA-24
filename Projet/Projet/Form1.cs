@@ -33,7 +33,7 @@ namespace Projet
             {
                 lblResultPerim.Text = "";
                 lblResultHypo.Text = "";
-                MessageBox.Show("Veriviez que les champs sont non-vide et les chiffres sont superieur a zero");
+                MessageBox.Show("Verifiez que les champs sont non-vide et les chiffres sont superieur a zero");
             }
             else
             {

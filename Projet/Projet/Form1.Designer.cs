@@ -78,7 +78,6 @@
             this.lblOppose.Size = new System.Drawing.Size(78, 24);
             this.lblOppose.TabIndex = 3;
             this.lblOppose.Text = "Opposé";
-            this.lblOppose.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -89,7 +88,6 @@
             this.label2.Size = new System.Drawing.Size(601, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Calculer l\'hypthenus, périmètre et l\'aire d\'un triangle rectangle";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // cmdCalcul
             // 
@@ -131,7 +129,6 @@
             this.lblPerimetre.Size = new System.Drawing.Size(77, 20);
             this.lblPerimetre.TabIndex = 8;
             this.lblPerimetre.Text = "Périmètre";
-            this.lblPerimetre.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblResultPerim
             // 

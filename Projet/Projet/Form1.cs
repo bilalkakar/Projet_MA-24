@@ -17,11 +17,6 @@ namespace Projet
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             double adjacent = 0, oppose = 0;
@@ -40,24 +35,31 @@ namespace Projet
             else
             {
                 double hypothenise = Hypothenise(adjacent, oppose);    // calcul de l'hypothenus du triangle
-                double perimetre = hypothenise + adjacent + oppose;    // calcule de la perimetre du triangle
-                double air = 0.5 * adjacent * oppose;
+                double perimetre = perim(adjacent,oppose,hypothenise);    // calcule de la perimetre du triangle
+                double air = aire(adjacent,oppose);
                 lblResultHypo.Text = hypothenise.ToString();
                 lblResultPerim.Text = perimetre.ToString();
                 lblResultAir.Text = air.ToString();
             }             
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        static double Hypothenise(double x, double y)  // la fonction qui calcule l'hypothenus d'un triangle
+        static double Hypothenise(double x, double y)  // la fonction qui calcule l'hypothenus d'un triangle et retourne un double
         {
             double SommeDesCarres = (x * x) + (y * y);
             double resultat = Math.Sqrt(SommeDesCarres);
             return resultat;
+        }
+
+        static double  perim(double a, double o, double h)  // la fonction calcule le perimetre d'un griangle et retourne un double
+        {
+            double result = a + o + h;
+            return result;
+        }
+        static double aire(double c, double d)     // la fonction calcul l'aire d'un triangle rectangle et retourne un double 
+        {
+            double air = 0.5 * c * d;
+            return air;
         }
 
         private void cmdButton_Click(object sender, EventArgs e)
@@ -71,9 +73,5 @@ namespace Projet
             txtOppose.Text = "";
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -26,14 +26,16 @@ namespace Projet
         {
             double adjacent = 0, oppose = 0;
 
-            Double.TryParse(txtAdjacent.Text, out adjacent);   //conversion du texte en double
-            Double.TryParse(txtOppose.Text, out oppose);     //conversion du texte en double
+            bool conversionAdj = Double.TryParse(txtAdjacent.Text, out adjacent);   //conversion du texte en double
+            bool conversionOpp = Double.TryParse(txtOppose.Text, out oppose);     //conversion du texte en double
 
-            if (txtAdjacent.Text=="" || txtOppose.Text=="" || adjacent <= 0 || oppose <= 0) // si les champs sont vides ou les valeurs sont plus petites que zero
+            if(conversionAdj == false || conversionOpp == false || txtAdjacent.Text == "" || txtOppose.Text == "" || adjacent <= 0 || oppose <= 0)
             {
                 lblResultPerim.Text = "";
                 lblResultHypo.Text = "";
-                MessageBox.Show("Verifiez que les champs sont non-vide et les chiffres sont superieur a zero");
+                MessageBox.Show("Verifiez que les champs sont non-vide et les chiffres sont valides et superieurs a zero");
+                txtAdjacent.Text = "";
+                txtOppose.Text = "";
             }
             else
             {
